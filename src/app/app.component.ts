@@ -9,5 +9,5 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'fraldas_otto_frontend';
+  title = 'fraldas_otto';
 }

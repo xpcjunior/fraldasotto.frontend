@@ -1,0 +1,38 @@
+<header>
+</header>
+<main>
+
+    <div class="container">
+        <div class="row mt-3 mb-3">
+            <div class="col d-flex justify-content-end">
+                <small>ultima atualização: <b>{{dados?.data || ''}}</b></small>
+            </div>
+        </div>
+
+        <div class="row about-title d-flex align-content-center flex-wrap px-3">
+
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th class="text-center" scope="col" style="width: 10%">Tamanho</th>
+                        <th class="text-center" scope="col" style="width: 30%">Estoque</th>
+                        <th class="text-center" scope="col" style="width: 30%">Utilizadas</th>
+                        <th class="text-center" scope="col" style="width: 30%">Restantes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (d of dados?.relatorio; track $index) {
+                    <tr>
+                        <td class="text-center">{{d.tamanho || ''}}</td>
+                        <td class="text-end">{{d.fraldas.estoque || 0}}</td>
+                        <td class="text-end">{{d.fraldas.utilizadas || 0}}</td>
+                        <td class="text-end">{{d.fraldas.restantes || 0}}</td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+</main>

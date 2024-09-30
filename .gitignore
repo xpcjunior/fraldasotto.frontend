@@ -28,6 +28,12 @@ yarn-error.log
 !.vscode/extensions.json
 .history/*
 
+# Firebase
+.firebase
+
+# Angular environment
+src/environments/environment.ts
+
 # Miscellaneous
 /.angular/cache
 .sass-cache/
