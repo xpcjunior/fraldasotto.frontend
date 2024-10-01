@@ -4,8 +4,20 @@
 
     <div class="container">
         <div class="row mt-3 mb-3">
-            <div class="col d-flex justify-content-end">
-                <small>ultima atualização: <b>{{dados?.data || ''}}</b></small>
+            <div class="col d-flex justify-content-end enunciados">
+                <span class="align-middle">
+                    <i class="fa-solid fa-clock" title="Ultima atualização"></i>
+                </span>
+                <small class="px-2">
+                    <span class="align-middle">
+                        <b>{{dados?.data || ''}}</b>
+                    </span>
+                </small>
+            </div>
+        </div>
+        <div class="row mt-3 mb-5">
+            <div class="col d-flex justify-content-center">
+                <img src="assets/imgs/logo_fraldasotto.png" alt="logo fraldas otto">
             </div>
         </div>
 
