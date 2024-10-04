@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
 import { Estoque } from '../../core/models/estoque.model';
 import { AutomacaoService } from '../../core/services/automacao.service';
+import { FooterComponent } from '../shared/footer/footer.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [
+    FooterComponent
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
