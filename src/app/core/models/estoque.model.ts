@@ -1,6 +1,8 @@
 export interface Estoque {
     id: string;
     data: string;
+    total_gasto: number;
+    total_fraldas_utilizadas: number;
     relatorio: RelatorioEstoque[];
 }
 
